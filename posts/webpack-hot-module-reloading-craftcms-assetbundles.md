@@ -1,5 +1,5 @@
 ---
-title: CraftCMS module plugin development - Webpack Hot Module Reloading AssetBundles
+title: CraftCMS module / plugin development - Webpack Hot Module Reloading AssetBundles
 date: 2022-04-11
 author: Leevi Graham
 gravatar: d613d2145633372c632e1a02a49657e0
