@@ -2,17 +2,17 @@ const fs = require('fs')
 const path = require('path')
 const { Feed } = require('feed')
 const { load } = require('./posts.data')
-const url = `https://blog.vuejs.org`
+const url = `https://dev-diary.newism.com.au`
 
 const feed = new Feed({
-  title: 'The Vue Point',
-  description: 'The official blog for the Vue.js project',
+  title: 'Newism Dev Diary',
+  description: 'CraftCMS development notes, tips and tricks.',
   id: url,
   link: url,
   language: 'en',
-  image: 'https://vuejs.org/images/logo.png',
+  image: 'https://dev-diary.newism.com.au/logo.png',
   favicon: `${url}/favicon.ico`,
-  copyright: 'Copyright (c) 2021-present, Yuxi (Evan) You and blog contributors'
+  copyright: 'Copyright (c) 2022-present, Newism Pty Ltd'
 })
 
 load(true).forEach((post) => {

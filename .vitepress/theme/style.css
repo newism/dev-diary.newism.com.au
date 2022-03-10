@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --c-brand: #3eaf7c;
-  --c-brand-light: #4abf8a;
+  --c-brand: #6E0A78;
+  --c-brand-light: #B70589;
 }
 
 nav img {
@@ -12,7 +12,7 @@ nav img {
 }
 
 p img {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .prose hr {
