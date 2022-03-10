@@ -10,7 +10,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:image',
-        content: 'https://vuejs.org/images/logo.png'
+        content: 'https://dev-diary.newism.com.au/twitter-card.svg'
       }
     ],
     [
