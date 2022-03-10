@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'The Vue Point',
-  description: 'The offical blog for the Vue.js project',
+  title: 'Newism Dev Diary',
+  description: 'CraftCMS development notes, tips and tricks.',
   head: [
-    ['meta', { name: 'twitter:site', content: '@vuejs' }],
+    ['meta', { name: 'twitter:site', content: '@newism' }],
     ['meta', { name: 'twitter:card', content: 'summary' }],
     [
       'meta',
@@ -19,15 +19,6 @@ export default defineConfig({
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
-      }
-    ],
-    [
-      'script',
-      {
-        src: 'https://cdn.usefathom.com/script.js',
-        'data-site': 'NYHGSGQV',
-        'data-spa': 'auto',
-        defer: ''
       }
     ]
   ],
