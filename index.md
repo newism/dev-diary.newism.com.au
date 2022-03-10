@@ -1,4 +1,4 @@
 ---
-title: The Vue Point
-subtext: Updates, tips & opinions from the maintainers of Vue.js.
+title: Dev Diary
+subtext: CraftCMS development notes, tips and tricks.
 ---

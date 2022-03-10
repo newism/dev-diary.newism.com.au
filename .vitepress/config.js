@@ -31,6 +31,9 @@ export default defineConfig({
       }
     ]
   ],
+  markdown: {
+    // lineNumbers: true
+  },
   vite: {
     build: {
       minify: 'terser'

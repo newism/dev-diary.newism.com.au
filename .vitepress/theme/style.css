@@ -111,3 +111,35 @@ p img {
 .token.inserted {
   color: #67cdcc;
 }
+
+.custom-block {
+  @apply p-4 bg-gray-100;
+}
+
+.custom-block.warning {
+  @apply bg-amber-100;
+}
+.custom-block.info {
+  @apply bg-sky-100;
+}
+
+.custom-block-title {
+  @apply m-0 text-sm;
+}
+
+.custom-block-title + * {
+  margin-top: 0;
+}
+
+.custom-block > :last-child {
+  margin-bottom: 0;
+}
+
+.language-text pre {
+  @apply bg-gray-100 text-gray-800;
+  line-height: 1.42;
+}
+
+h2 a {
+  font-weight: inherit !important;
+}
