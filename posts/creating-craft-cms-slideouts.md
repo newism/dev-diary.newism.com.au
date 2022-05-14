@@ -72,6 +72,8 @@ class SlideoutController extends Controller
 {
     public function actionIndex(): Response
     {
+        // asCpScreen was added in Craft4.
+        // For Craft 3 see: https://craftcms.com/docs/3.x/extend/cp-templates.html
         return $this->asCpScreen()
             ->title('Slideout Controller')
             ->contentTemplate(
@@ -171,6 +173,8 @@ class SlideoutController extends Controller
     {
         Craft::$app->getView()->registerAssetBundle(Asset::class);
         
+        // asCpScreen was added in Craft4.
+        // For Craft 3 see: https://craftcms.com/docs/3.x/extend/cp-templates.html
         return $this->asCpScreen()
             ->title('Slideout Controller')
             ->contentTemplate(
