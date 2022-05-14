@@ -6,7 +6,8 @@ gravatar: d613d2145633372c632e1a02a49657e0
 twitter: '@leevigraham'
 ---
 
-Craft CMS 3.7 added element editor slideouts. I'm going to show you how to add slideouts to your own module or plugin. 
+Craft CMS 3.7 added element editor slideouts. Craft 4 took it a step further with `CpScreenSlideout`.
+I'm going to show you how to add slideouts to your own module or plugin. 
 
 ---
 
@@ -14,7 +15,7 @@ Craft CMS 3.7 added element editor slideouts. I'm going to show you how to add s
 
 To get started you'll need:
 
-1. A Craft CMS v3.7.22+ install (also tested in Craft CMS v4.0.0)
+1. A Craft CMS v4.0.0 install
 2. A custom module or plugin.
 
 ## Create a Module
@@ -72,8 +73,6 @@ class SlideoutController extends Controller
 {
     public function actionIndex(): Response
     {
-        // asCpScreen was added in Craft4.
-        // For Craft 3 see: https://craftcms.com/docs/3.x/extend/cp-templates.html
         return $this->asCpScreen()
             ->title('Slideout Controller')
             ->contentTemplate(
@@ -133,8 +132,6 @@ Add the following javascript to your `AssetBundle` `script.js`:
             this.$triggerElement.on('click', $.proxy(this, 'onClick'));
         },
         onClick: function () {
-            // Create a new slideout populated with content from a CP Screen action
-            // The Craft.CpScreenSlideout argument is a controller action string
             const slideout = new Craft.CpScreenSlideout('my-module/slideout/content');
             // Open the slideout
             slideout.open();
@@ -173,8 +170,6 @@ class SlideoutController extends Controller
     {
         Craft::$app->getView()->registerAssetBundle(Asset::class);
         
-        // asCpScreen was added in Craft4.
-        // For Craft 3 see: https://craftcms.com/docs/3.x/extend/cp-templates.html
         return $this->asCpScreen()
             ->title('Slideout Controller')
             ->contentTemplate(
