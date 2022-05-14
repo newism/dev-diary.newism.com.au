@@ -1,6 +1,6 @@
 ---
 title: How to add a slideout panel to your Craft CMS module or plugin
-date: 2022-04-14
+date: 2022-05-14
 author: Leevi Graham
 gravatar: d613d2145633372c632e1a02a49657e0
 twitter: '@leevigraham'
