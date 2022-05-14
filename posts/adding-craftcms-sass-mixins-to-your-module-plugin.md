@@ -1,16 +1,16 @@
 ---
-title: Add CraftCMS Control Panel styling to your module / plugin
+title: Add Craft CMS Control Panel styling to your module / plugin
 date: 2022-03-12
 author: Leevi Graham
 gravatar: d613d2145633372c632e1a02a49657e0
 twitter: '@leevigraham'
 ---
 
-Keep your plugin / module UI consistent with the CraftCMS Control Panel using the official sass mixins.
+Keep your plugin / module UI consistent with the Craft CMS Control Panel using the official sass mixins.
 
 ---
 
-The CraftCMS Control Panel uses a set [sass mixins](https://github.com/craftcms/sass/blob/main/_mixins.scss)
+The Craft CMS Control Panel uses a set [sass mixins](https://github.com/craftcms/sass/blob/main/_mixins.scss)
 to keep styling consistent. Mixins include:
 
 * Colour variables
@@ -22,7 +22,7 @@ to keep styling consistent. Mixins include:
 To use the mixins you'll need to build your plugin / module
 asset bundle with a build tool like webpack or vite that supports `scss` imports.
 
-My last post shows you [how to setup Webpack to build asset bundles](/posts/webpack-hot-module-reloading-craftcms-assetbundles.html).
+My last post shows you [how to setup Webpack to build asset bundles](/posts/webpack-hot-module-reloading-craftcms-assetbundles.md).
 
 Install the package in your asset bundle `package.json`:
 
@@ -45,8 +45,8 @@ Use the mixins in your custom classes:
 }
 ```
 
-## Sidenote
+## Side Note
 
 The `@craftcms/sass` package is updated as part of the 
-[`craftcms/cms` Github repository](https://github.com/craftcms/cms/tree/develop/packages/craftcms-sass) 
+[` craftcms/cms` Github repository](https://github.com/craftcms/cms/tree/develop/packages/craftcms-sass) 
 and published with [Lerna](https://github.com/lerna/lerna).

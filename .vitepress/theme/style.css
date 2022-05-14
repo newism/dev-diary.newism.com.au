@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --c-brand: #6E0A78;
+  --c-brand: #ff0099;
   --c-brand-light: #B70589;
 }
 
@@ -140,6 +140,10 @@ p img {
   line-height: 1.42;
 }
 
-h2 a {
+h2 a, h2 code, h3 code {
   font-weight: inherit !important;
+}
+
+.prose a {
+  color: var(--c-brand);
 }
