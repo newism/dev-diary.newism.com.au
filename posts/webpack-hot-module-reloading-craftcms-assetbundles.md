@@ -1,12 +1,12 @@
 ---
-title: Craft CMS module / plugin development - Webpack Hot Module Reloading AssetBundles
+title: CraftCMS module / plugin development - Webpack Hot Module Reloading AssetBundles
 date: 2022-03-11
 author: Leevi Graham
 gravatar: d613d2145633372c632e1a02a49657e0
 twitter: '@leevigraham'
 ---
 
-Craft CMS devs use Webpack Dev Server w/ Hot Module Reloading to generate module / plugin Asset Bundles. Now you can too.
+CraftCMS devs use Webpack Dev Server w/ Hot Module Reloading to generate module / plugin Asset Bundles. Now you can too.
 
 ---
 
@@ -14,7 +14,7 @@ Craft CMS devs use Webpack Dev Server w/ Hot Module Reloading to generate module
 
 To get started you'll need:
 
-1. A Craft CMS v3.7.22+ install (also tested in Craft CMS v4.0)
+1. A CraftCMS v3.7.22+ install (also tested in CraftCMS v4.0)
 2. A custom module or plugin.
 
 For the rest of the article I'm assuming you'
@@ -165,7 +165,7 @@ This file extends [Crafts default webpack configuration](https://github.com/craf
 /* jshint esversion: 6 */
 /* globals module, require */
 
-// Load the Craft CMS webpack config helper
+// Load the CraftCMS webpack config helper
 const {getConfig} = require('@craftcms/webpack');
 
 // Export config
@@ -253,7 +253,7 @@ open http://127.0.0.1:8085/css/Asset.css
 
 There's a lot webpack cruft… that's because we're running the DevServer.
 
-If you refresh the Craft CMS admin the red background will have disappeared.
+If you refresh the CraftCMS admin the red background will have disappeared.
 That's because `npx webpack serve` empties the `modules/web/assets/cp/dist/` directory.
 
 Let's fix that.

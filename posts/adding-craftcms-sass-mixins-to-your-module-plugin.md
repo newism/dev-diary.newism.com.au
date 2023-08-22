@@ -1,16 +1,16 @@
 ---
-title: Add Craft CMS Control Panel styling to your module / plugin
+title: Add CraftCMS Control Panel styling to your module / plugin
 date: 2022-03-12
 author: Leevi Graham
 gravatar: d613d2145633372c632e1a02a49657e0
 twitter: '@leevigraham'
 ---
 
-Keep your plugin / module UI consistent with the Craft CMS Control Panel using the official sass mixins.
+Keep your plugin / module UI consistent with the CraftCMS Control Panel using the official sass mixins.
 
 ---
 
-The Craft CMS Control Panel uses a set [sass mixins](https://github.com/craftcms/sass/blob/main/_mixins.scss)
+The CraftCMS Control Panel uses a set [sass mixins](https://github.com/craftcms/sass/blob/main/_mixins.scss)
 to keep styling consistent. Mixins include:
 
 * Colour variables

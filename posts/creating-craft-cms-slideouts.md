@@ -1,12 +1,12 @@
 ---
-title: How to add a slideout panel to your Craft CMS module or plugin
+title: How to add a slideout panel to your CraftCMS module or plugin
 date: 2022-05-14
 author: Leevi Graham
 gravatar: d613d2145633372c632e1a02a49657e0
 twitter: '@leevigraham'
 ---
 
-Craft CMS 3.7 added element editor slideouts. Craft 4 took it a step further with `CpScreenSlideout`.
+CraftCMS 3.7 added element editor slideouts. Craft 4 took it a step further with `CpScreenSlideout`.
 I'm going to show you how to add slideouts to your own module or plugin. 
 
 ---
@@ -15,13 +15,12 @@ I'm going to show you how to add slideouts to your own module or plugin.
 
 To get started you'll need:
 
-1. A Craft CMS v4.0.0 install
+1. A CraftCMS v4.0.0 install
 2. A custom module or plugin.
 
 ## Create a Module
 
-[Create a module following the Craft CMS docs](https://craftcms.com/docs/4.x/extend/module-guide.html#preparation).
-
+[Create a module following the CraftCMS docs](https://craftcms.com/docs/4.x/extend/module-guide.html#preparation).
 
 Important: Double check that the [module template root](https://craftcms.com/docs/4.x/extend/template-roots.html#plugin-control-panel-templates)
 is registered in your module's `init` method:
@@ -40,11 +39,11 @@ Event::on(
 
 ## Create an Asset Bundle
 
-[Create an `Asset Bundle` following the Craft CMS docs](https://craftcms.com/docs/4.x/extend/asset-bundles.html).
+[Create an `Asset Bundle` following the CraftCMS docs](https://craftcms.com/docs/4.x/extend/asset-bundles.html).
 
 ## Create a Control Panel Controller
 
-If you're unfamiliar with `Controllers` [read the Craft CMS docs first](https://craftcms.com/docs/4.x/extend/controllers.html).
+If you're unfamiliar with `Controllers` [read the CraftCMS docs first](https://craftcms.com/docs/4.x/extend/controllers.html).
 
 We're going to create a new `SlideoutController` that will be responsible for:
 
@@ -260,7 +259,7 @@ If everything works as expected you should see:
 
 ## Wrapping Up
 
-Craft CMS Slideout panels provide another tool in your module UI toolbelt.
+CraftCMS Slideout panels provide another tool in your module UI toolbelt.
 
 I've shown you how to implement a `Craft.CpScreenSlideout` 
 but there's also [`Craft.Slideout`](https://github.com/craftcms/cms/blob/develop/src/web/assets/cp/src/js/Slideout.js) (the base class) 
