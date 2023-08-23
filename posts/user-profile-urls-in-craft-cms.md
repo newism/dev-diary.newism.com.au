@@ -30,6 +30,10 @@ This is fine but it's not ideal. It's also not very flexible. What if you want t
 First thing you might try is adding a [custom behaviour](https://craftcms.com/docs/4.x/extend/behaviors.html) to Users with a `getUrl()` method.
 Unfortunately this won't work because `User` is an `Element` and `Element`'s already have a `getUrl()` method which can't be overwritten in a `Behaviour`.
 
+::: info
+If you're using CraftCMS < v4.3.0 you could still use a behaviour and add a `getProfileUrl()` method.
+:::
+
 Looking at the `Element::getUrl()` ([committed on Oct 21, 2022](https://github.com/craftcms/cms/commit/4e5f62cd08bd61c27d973437331e893e3a11610f)) method we can see there is a `User::EVENT_DEFINE_URL` event that is fired before the url is returned. We can use this to add our own logic.
 
 ## Create a module
